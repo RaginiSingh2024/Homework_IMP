@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Padding, Margin & Flex Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .demo-box {
+      background: lightblue;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .with-padding {
+      padding: 20px;
+      background-color: lightgreen;
+    }
+
+    .with-margin {
+      margin: 20px;
+      background-color: lightsalmon;
+    }
+
+    .label {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .challenge-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: #f1f1f1;
+    }
+
+    .challenge-inner {
+      margin: 50px;
+      padding: 30px;
+      background: darkslateblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🧠 Padding, Margin & Flexbox — Practice Homework</h1>
+
+<!-- Practice Set 1: Padding -->
+<h2>🔷 Practice Set 1: Padding</h2>
+
+<h3>🔹 Practice 1.1: Basic Padding Box</h3>
+<div class="demo-box" style="padding: 10px 30px;">
+  This box has custom padding (10px top/bottom, 30px left/right).
+</div>
+
+<h3>🔹 Practice 1.2: Padding for a Button</h3>
+<button style="padding: 15px 30px;">Click Me</button>
+
+<h3>🔹 Practice 1.3: Different Padding Sides</h3>
+<div style="padding: 30px 10px 5px 0; background: peachpuff;">
+  Padding: 30px top, 10px right, 5px bottom, 0 left.
+</div>
+
+<!-- Practice Set 2: Margin -->
+<h2>🔷 Practice Set 2: Margin</h2>
+
+<h3>🔹 Practice 2.1: Margin Between Two Boxes</h3>
+<div style="margin-bottom: 30px; background: lavender; padding: 10px;">First box</div>
+<div style="background: thistle; padding: 10px;">Second box</div>
+
+<h3>🔹 Practice 2.2: Auto Margin Centering</h3>
+<div style="width: 200px; margin: auto; background: lightgreen; padding: 10px; border: 2px dashed green;">
+  Centered Box with border
+</div>
+
+<h3>🔹 Practice 2.3: Margin on All Sides</h3>
+<p style="margin: 30px 10px; background: mistyrose; padding: 10px;">
+  Margin: 30px top/bottom, 10px left/right
+</p>
+
+<!-- Practice Set 3: Flexbox -->
+<h2>🔷 Practice Set 3: Flexbox</h2>
+
+<h3>🔹 Practice 3.1: Simple Horizontal Layout</h3>
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <div style="background: lightcoral; padding: 20px;">Box 1</div>
+  <div style="background: lightseagreen; padding: 20px;">Box 2</div>
+  <div style="background: lightgoldenrodyellow; padding: 20px;">Box 3</div>
+</div>
+
+<h3>🔹 Practice 3.2: Centering with Flex</h3>
+<div style="display: flex; justify-content: center; align-items: flex-end; height: 100px; background: lightyellow;">
+  <div style="background: tomato; padding: 20px;">Aligned Bottom</div>
+</div>
+
+<h3>🔹 Practice 3.3: Responsive Columns</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <div style="flex: 1 1 200px; background: skyblue; padding: 20px;">Column 1</div>
+  <div style="flex: 1 1 200px; background: lightpink; padding: 20px;">Column 2</div>
+  <div style="flex: 1 1 200px; background: lightgray; padding: 20px;">Column 3</div>
+</div>
+
+<!-- Advanced Concept: Padding vs Margin vs Flex -->
+<h2>🔷 Advanced Practice</h2>
+
+<h3>🔍 Section 1: Padding vs Margin – Side-by-Side</h3>
+<div class="flex-container">
+  <div>
+    <div class="label">Padding</div>
+    <div class="box with-padding">Padding adds space *inside* the box.</div>
+  </div>
+  <div>
+    <div class="label">Margin</div>
+    <div class="box with-margin">Margin adds space *outside* the box.</div>
+  </div>
+</div>
+
+<h3>🔄 Section 2: Padding + Margin Together</h3>
+<div style="padding: 30px; margin: 30px; background: lightcoral; color: white; width: 300px;">
+  Padding gives inner space. <br>
+  Margin gives outer space. <br><br>
+  🧠 Use Dev Tools to see the box model!
+</div>
+
+<h3>⚙️ Section 3: Flexbox Behavior</h3>
+<div style="display: flex; justify-content: center; align-items: center; height: 200px; background: #eee;">
+  <div style="background: lightpink; padding: 20px;">Flex Child 1</div>
+  <div style="background: lightblue; padding: 20px;">Flex Child 2</div>
+  <div style="background: lightgreen; padding: 20px;">Flex Child 3</div>
+</div>
+
+<!-- Summary Table -->
+<h2>📘 Key Concepts Summary Table</h2>
+<table border="1" cellpadding="8" style="border-collapse: collapse;">
+  <tr>
+    <th>Property</th>
+    <th>Affects</th>
+    <th>Moves?</th>
+    <th>Acts On</th>
+    <th>Common Use</th>
+  </tr>
+  <tr>
+    <td><code>padding</code></td>
+    <td>Inner space</td>
+    <td>Inside the element</td>
+    <td>Content</td>
+    <td>Button sizing, cards, spacing inside</td>
+  </tr>
+  <tr>
+    <td><code>margin</code></td>
+    <td>Outer space</td>
+    <td>Around the element</td>
+    <td>Other elements</td>
+    <td>Separating blocks, centering</td>
+  </tr>
+  <tr>
+    <td><code>display: flex</code></td>
+    <td>Layout</td>
+    <td>Children arrangement</td>
+    <td>Children</td>
+    <td>Responsive layouts</td>
+  </tr>
+</table>
+
+<!-- Bonus Challenge -->
+<h2>🚀 Bonus: Visual Challenge</h2>
+<div class="challenge-box">
+  <div class="challenge-inner">
+    Challenge Box<br>
+    Has both padding & margin
+  </div>
+</div>
+
+</body>
+</html>
